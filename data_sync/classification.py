@@ -2,7 +2,7 @@ import tushare as ts
 import pandas as pd
 
 
-class StockClassification(object):
+class Classification(object):
     def __init__(self):
         self.base_dir = "./class_data/"
         self.industry_file = self.base_dir + "industry.csv"
@@ -76,5 +76,5 @@ class StockClassification(object):
 
 
 if __name__ == "__main__":
-    sc = StockClassification()
+    sc = Classification()
     sc.initialize()

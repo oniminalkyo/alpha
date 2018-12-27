@@ -3,7 +3,7 @@ import pandas as pd
 import datetime
 
 
-class StockFinanceBasics(object):
+class FinanceBasics(object):
     def __init__(self):
         self.data_dir = "./data/"
         self.basics_file = self.data_dir + "basics.csv"
@@ -33,7 +33,7 @@ class StockFinanceBasics(object):
         if current_year.year not in self.years:
             self.years.append(current_year.year)
 
-    def init_stock_basics(self):
+    def initialize(self):
         df = ts.get_stock_basics()
         df.to_csv(self.basics_file)
 
@@ -97,8 +97,8 @@ class StockFinanceBasics(object):
 
 
 if __name__ == "__main__":
-    sb = StockFinanceBasics()
-    sb.init_stock_basics()
+    sb = FinanceBasics()
+    sb.initialize()
     stock = sb.get_stock_basics()
     print(stock)
 
