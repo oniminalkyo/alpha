@@ -86,7 +86,7 @@ class Transaction(object):
 if __name__ == "__main__":
     st = Transaction()
     #st.init_hist_data()
-    #st.init_last_day_data()
-    st.init_all_hist_data()
-    df = st.get_all_hist_data()
-    print(df)
+    st.init_last_day_data()
+    #st.init_all_hist_data()
+    #df = st.get_all_hist_data()
+    #print(df)
