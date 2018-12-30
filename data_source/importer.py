@@ -1,10 +1,6 @@
-import tushare as ts
-import pandas as pd
-import datetime
-
-from data_sync.basics import FinanceBasics
-from data_sync.classification import Classification
-from data_sync.transaction import Transaction
+from data_source.basics import FinanceBasics
+from data_source.classification import Classification
+from data_source.transaction import Transaction
 
 
 class Importer(object):
@@ -25,7 +21,7 @@ class Importer(object):
 if __name__ == "__main__":
     data_importer = Importer()
     data_importer.initialize_all()
-    data_importer.update_laterst()
+    #data_importer.update_laterst()
 
 
 

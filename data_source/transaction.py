@@ -4,10 +4,9 @@ import pandas as pd
 
 class Transaction(object):
     def __init__(self):
-        self.base_dir = "./"
-        self.his_data_dir = "./hist_data/"
+        self.his_data_dir = "./transaction_data/"
         self.hist_data_file = self.his_data_dir + "hist_data.csv"
-        self.today_all_file = self.base_dir + "today_all.csv"
+        self.today_all_file = self.his_data_dir + "today_all.csv"
 
     def init_hist_data(self, code):
         df = ts.get_hist_data(code)
