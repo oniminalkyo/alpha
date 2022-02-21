@@ -2,8 +2,8 @@ import tushare as ts
 import pandas as pd
 import numpy as np
 
-from config.configuration import Configuration
-from data_source.data_server import DataSourceServer
+from common.configuration import Configuration
+from financial.data_server import DataSourceServer
 
 
 class DistributionEarnRate(object):

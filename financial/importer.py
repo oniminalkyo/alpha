@@ -1,6 +1,6 @@
-from data_source.basics import FinanceBasics
-from data_source.basics import Classification
-from data_source.basics import Transaction
+from financial.basics import FinanceBasics
+from financial.basics import Classification
+from financial.basics import Transaction
 
 
 class Importer(object):

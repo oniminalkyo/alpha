@@ -1,9 +1,9 @@
 import pandas as pd
 
-from data_source.config import BASIC_DATA_INFORMATION_FILE
-from data_source.config import BASIC_DATA_REPORTS_FILE
-from data_source.config import TRANSACTION_DATA_DIR
-from data_source.config import ALL_TRANSACTION_DATA_RECORDS
+from financial.config import BASIC_DATA_INFORMATION_FILE
+from financial.config import BASIC_DATA_REPORTS_FILE
+from financial.config import TRANSACTION_DATA_DIR
+from financial.config import ALL_TRANSACTION_DATA_RECORDS
 
 
 class DataSourceServer(object):

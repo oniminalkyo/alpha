@@ -2,7 +2,7 @@ import tushare as ts
 import pandas as pd
 import datetime
 
-from data_source.config import BASIC_DATA_DIR
+from financial.config import BASIC_DATA_DIR
 
 
 class FinanceBasics(object):
